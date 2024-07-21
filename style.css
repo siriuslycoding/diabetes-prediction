@@ -1,0 +1,55 @@
+body {
+    background-color: #021324;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.navbar-brand {
+    font-weight: bold;
+}
+
+.card {
+    border: none;
+    border-radius: 15px;
+    background-color: #034347;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #f3d5f5;
+}
+
+.form-group label {
+    font-weight: bold;
+    color: #fdfbfb;
+}
+
+.btn-primary {
+    background-color: #ff9d00;
+    border-color: #ff9d00;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #ff7003;
+    border-color: #ff7003;
+}
+
+#result {
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #faf6f6;
+
+}
+
+#result-text {
+    margin-top: 10px;
+    font-size: 1.2rem;
+}
+
+.footer {
+    margin-top: auto;
+}
