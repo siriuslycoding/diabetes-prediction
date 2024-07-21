@@ -5,14 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diabetes Prediction</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href=".\static\style.css">
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <a class="navbar-brand" href="#">Diabetes Predictor</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <button id="predictButton" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div id="output"></div>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item">
@@ -56,7 +57,7 @@
                                 <input type="number" class="form-control" id="heartDisease" name="heartDisease" required>
                             </div>
                             <div class="form-group">
-                                <label for="smokingHistory">Smoking History (Enter 0 for Never, 1 for No info, 2 for current, 3 for former, 4 for ever,5 not current) </label>
+                                <label for="smokingHistory">Smoking History (Enter 1 if Yes, 0 if No) </label>
                                 <input type="number" class="form-control" id="smokingHistory" name="smokingHistory" required>
                             </div>
                             <div class="form-group">
@@ -67,7 +68,7 @@
                                 <label for="bloodGlucose">Blood Glucose Level </label>
                                 <input type="number" class="form-control" id="bloodGlucose" name="bloodGlucose" required>
                             </div>
-                            <button type="button" onclick="predict()" class="btn btn-primary btn-block" >Predict</button>
+                            <button type="button" class="btn btn-primary btn-block">Predict</button>
                         </form>
                         <div id="result" class="mt-3 p-3 bg-light border rounded" style="display: none;">
                             <h3 class="text-center">Prediction Result</h3>
